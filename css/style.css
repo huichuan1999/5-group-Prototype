@@ -1,0 +1,71 @@
+
+/*This is a comment in CSS*/
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 80px;
+    top: 40%;
+    color:darkslateblue;
+}
+
+h5{
+    font-size: 160px;
+    font-weight: 100;
+
+}
+
+h3 {
+    width: 400px;
+    font-size: 20px;
+    font-weight: 800;
+    color: cornflowerblue;
+    left: 20%;
+    top: 40%;
+}
+
+h4 {
+    font-size: 60px;
+    font-weight: 100;
+    right: 20%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.centered-wrapper{
+    width:600px;
+    height: 400px;
+    margin: 100px auto;
+    text-align: left;
+    padding-top: 50px;
+}
+
+
+.bottom-wrapper{
+    width:800px;
+    height: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title{
+    position: relative;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+.title a{
+    position: absolute;
+    color:crimson;
+}
+
+
+a.next:hover{
+    font-size: 300px;
+}
+
