@@ -176,7 +176,8 @@ h3 {
 } 
 .centered-wrapper{
     width:500px;
-    margin: 0 auto;
+	
+    margin: 80 auto;
     text-align: left;
     padding-top: 150px;
     color: mediumorchid;
