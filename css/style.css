@@ -161,3 +161,24 @@ h3 {
       border-color:crimson;
     }
   }
+
+.jing{
+    text-align: right;
+    color:darkseagreen;
+}
+
+.huichuan{
+	font-family: Verdana,Georgia, serif;
+	font-size: 30px;
+	text-align: left;
+	background-color:white;
+    color:mediumpurple;
+} 
+.centered-wrapper{
+    width:500px;
+	
+    margin: 80 auto;
+    text-align: left;
+    padding-top: 150px;
+    color: mediumorchid;
+}
