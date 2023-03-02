@@ -142,6 +142,14 @@ h3 {
   animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
 }
 
+h4{
+	font-size:4vw;
+	font-weight:600;
+	letter-spacing: 3px;
+
+	color:mediumorchid;
+}
+
 /* The typing effect */
 @keyframes typing {
     from {
@@ -162,6 +170,14 @@ h3 {
     }
   }
 
+h3.sleep{
+	font-size: 2vw;
+	font-weight: 300;
+	letter-spacing: 2px;
+
+	color:lightblue;
+}
+
 .jing{
     text-align: right;
     color:darkseagreen;
@@ -175,10 +191,10 @@ h3 {
     color:mediumpurple;
 } 
 .centered-wrapper{
-    width:500px;
+    width:1500px;
 	
     margin: 80 auto;
     text-align: left;
-    padding-top: 150px;
+    padding-top: 30px;
     color: mediumorchid;
 }
