@@ -1,71 +1,163 @@
 
 /*This is a comment in CSS*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 
+}
 body{
     font-family: 'Courier New', Courier, monospace;
+    
+}
+
+div {
+	width:50%;
+	margin:50px;
+}
+
+div img{
+	width:100%;
+}
+
+.home {
+	height: 100vh;
+}
+
+.home1 {
+	margin: 5vh auto auto  auto;
+	width:15%;
+	display: flex;
+}
+.movebox1 {
+	margin:35vh auto auto auto;
+	width:10px;
+	height:10px;
+	background-color:#000000;
+	animation-name:move-color;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	position:relative;
+}
+
+@keyframes move-color {
+	0% {
+		top:0;
+		left:0;
+		background-color:black;
+	}
+	25% {
+		top:0;
+		left:700px;
+		border-radius: 50%;
+	}
+	50% {
+		top:200px;
+		left:300px;
+	}
+	75% {
+		top:200px;
+		left:0;
+		border-radius: 10%;
+	}
+	100%{
+		top:0;
+		left:0;
+		background-color: white;
+		
+	}
 }
 
 h1{
-    font-size: 80px;
-    top: 40%;
-    color:darkslateblue;
+	font-size: 4vw;
+	font-weight: 700;
+	letter-spacing: 15px;
 }
 
-h5{
-    font-size: 160px;
-    font-weight: 100;
+a{
+	text-decoration:none;
+	color:royalblue;
+	
+}
+
+h2 {
+	font-size:1.5vw;
+	font-weight:300;
+	color:#1AFF14;
+}
+
+.top-left {
+	position: fixed;
+	top: 20px;
+	left:20px;
+	z-index: 10;
+}
+
+.top-right {
+	position: fixed;
+	top:0;
+	right:20px;
+	transform: rotate(270deg);
+	transform-origin: bottom right;
+	z-index: 10;
+}
+
+.bottom-left {
+	position:fixed;
+	bottom:20px;
+	left:20px;
+	transform: rotate(270deg);
+	transform-origin: top left;
+	z-index: 10;
+}
+
+.bottom-right {
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+	z-index: 10;
+}
+
+p {
+	font-size: 3vw;
+	color:lightgreen;
+    background-color: grey;
+	margin: 20px auto;
+	letter-spacing: 3px;
 
 }
 
 h3 {
-    width: 400px;
-    font-size: 20px;
-    font-weight: 800;
-    color: cornflowerblue;
-    left: 20%;
-    top: 40%;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: left;
+  overflow: hidden;/* Ensures the content is not revealed until the animation */
+  border-right: .17em solid pink;/* The typewriter cursor */
+  white-space: nowrap;/* Keeps the content on a single line */
+  margin: 0 auto;/* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em;/* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
 }
 
-h4 {
-    font-size: 60px;
-    font-weight: 100;
-    right: 20%;
-}
-
-p{
-    font-size: 20px;
-}
-
-.centered-wrapper{
-    width:600px;
-    height: 400px;
-    margin: 100px auto;
-    text-align: left;
-    padding-top: 50px;
-}
-
-
-.bottom-wrapper{
-    width:800px;
-    height: 300px;
-    margin: 100px auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.title{
-    position: relative;
-    width: 350px;
-    text-align: center;
-    margin: 0 auto;
-}
-.title a{
-    position: absolute;
-    color:crimson;
-}
-
-
-a.next:hover{
-    font-size: 300px;
-}
-
+/* The typing effect */
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from,
+    to {
+      border-color: transparent
+    }
+    50% {
+      border-color:crimson;
+    }
+  }
