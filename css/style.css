@@ -120,6 +120,11 @@ h2 {
 	right:20px;
 	z-index: 10;
 }
+.center{
+	position: absolute;
+            top: 50%;
+            left: 50%;
+}
 
 p {
 	font-size: 3vw;
