@@ -219,7 +219,7 @@ h5{
     color:mediumpurple;
 } 
 .centered-wrapper{
-    width:1500px;
+    width:auto;
 	
     margin: 80 auto;
     text-align: left;
