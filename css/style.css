@@ -170,12 +170,24 @@ h4{
     }
   }
 
+.sleepbackground{
+	background-color:rgb(255, 251, 240);
+}
+
 h3.sleep{
 	font-size: 2vw;
-	font-weight: 300;
+	font-weight: 350;
 	letter-spacing: 2px;
 
-	color:lightblue;
+	color:rgb(135, 112, 146);
+}
+
+.sleep1{
+	margin: -450px 0 0 0;
+	float:right;
+	width:50%;
+	display: flex;
+
 }
 
 .jing{
@@ -187,7 +199,7 @@ h3.sleep{
 	font-family: Verdana,Georgia, serif;
 	font-size: 30px;
 	text-align: left;
-	background-color:white;
+
     color:mediumpurple;
 } 
 .centered-wrapper{
