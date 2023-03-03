@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+body{
+  background: white;
+}
+
+main{
+  position:fixed;
+  width: 100%;
+  height:100%;
+}
+
+#sketch-container{
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries for responsive design */
+
+/* Custom to match our canvas size */
+@media screen and (max-width: 500px) {
+  body{
+    color: blue;
+  }
+}
