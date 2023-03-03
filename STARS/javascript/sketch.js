@@ -3,9 +3,11 @@ let canvas;
 let displayState = 0;
 
 [a, b, c, d] = [-2.0, -2.0, -0.5, -0.7]
-W=1000
+
+W=820
 r=200;
 cont=110;
+g=1;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -16,17 +18,32 @@ function setup() {
   D=H/20
   C=15
   P=[]
-  stroke(W)
+
 }
 
 function draw() {
-  background(0);
 
+  if(g){
+   
+    w=W
+	background(15);
+    }
+
+  stroke(255),
+	n=12;
+	for(i=0;i<n;i++)
+		for(j=0;j<10;j++)
+			e=random(Math.PI*2),
+			r=map(i,0,n-1,w/3,w/10)*pow(random(),map(i,0,n-1,0.1,0.2)-abs(e-Math.PI)/10),
+			point(cos(e)*(r)+w/2,sin(e)*r+w/2-100);
+	g=0;
+  
+ 
   stroke(255)
   strokeWeight(1)
   
   
-  translate(windowWidth/2, windowHeight/2)
+ translate(windowWidth/2, windowHeight/2)
   stroke(0,0,random(200,255))
   
   t = millis()/10000
@@ -42,7 +59,7 @@ function draw() {
   	y =  sin(b * prevX + t)*cos(b * prevY + t) + d * cos(b * prevY + t) * sin(a * prevY + t)
     
 
-    point(130 * x, 130 * y)
+    point(110 * x, 110 * y)
 
     prevX = x
     prevY = y
@@ -51,7 +68,7 @@ function draw() {
   
   translate(-W/2, -W/2)
   
-  stroke(255)
+  stroke(255,20)
   
   P.length<W&&P.push({x:H,y:H})
 	C+=.01
