@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Sphinx's riddle</title>
+<html lang="en">
+  <head>
 
-        <!--This is a link to the css style sheet where you can make styling rules that will be applied to all pages-->
-        <link rel="stylesheet" href="../css/style.css">
+    <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    </head>
-    <body>
+    <!-- Using local versions of the scripts is better when you start to finalise a project
+    OR if you are showing a work in an exhibition setting, removing reliance on the internet 
+    & runnning everything locally will make the work more robust if the network is bad.-->
+  
+    <!--  -->
+    <script src="javascript/libs/p5.js"></script>
+    <script src="javascript/libs/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8" />
 
-        <div class="centered-wrapper">
-            <p>
-               
-                <h1>
-                    First think of a person who lives in disguise,
-                    Who deals in secrets and tells naught but lies.
-                </h1>   
-        
-               <h2>
-                <a href="../middle/" class="next" >Next, </a> 
-                </h2> 
-            
-            </p>
-        </div>
-
-    </body>
+  </head>
+  <body>
+    <main>
+      <div id="sketch-container"></div>
+    </main>
+    <script src="javascript/sketch.js"></script>
+  </body>
 </html>
