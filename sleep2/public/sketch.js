@@ -36,7 +36,7 @@ function setup() {
 
 function draw() {
   //this background color can make the gaps between each rectange on the background look not that obviously
-  background(0);
+  background(255, 251, 240);
   
   //set the number of new Sleep create each frame
   for (var i = 0; i < 2; i++) {
