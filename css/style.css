@@ -195,11 +195,6 @@ h5{
 
 	color:rgb(135, 112, 146);
 }
-
-.back{
-	font-size: 10px;
-	display:inline-flex;
-}
   
 .sleep1{
 	margin: -500px 0 0 0;
@@ -207,6 +202,13 @@ h5{
 	width:50%;
 	display: flex;
 
+}
+
+.back{
+	position:fixed;
+	padding:0px 95%;
+	
+	font-size: 40px;
 }
 
 .huichuan{
