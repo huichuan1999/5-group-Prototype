@@ -1,0 +1,31 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background-color:rgb(255, 251, 240);
+}
+
+canvas {
+	display: block;
+}
+  
+main{
+	position:fixed;
+	width: 100%;
+	height:100%;
+}
+  
+#sketch-container{
+	width: 100%;
+	height: 100%;
+}
+  
+nav{
+	position: fixed;
+	padding:15px 2%;
+}
+  
+a{
+	font-size: 30px;
+	color:#8791a5;
+}
+  
