@@ -196,8 +196,9 @@ h5{
 	color:rgb(135, 112, 146);
 }
 
-#back{
+.back{
 	font-size: 10px;
+	display:inline-flex;
 }
   
 .sleep1{
